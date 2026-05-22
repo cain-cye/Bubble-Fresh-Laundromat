@@ -156,7 +156,7 @@ function render8UnitHardwareStatusDeck() {
             runtimeDescriptionBlock = `
                 <div>
                     <strong class="text-cloud-dark d-block font-monospace text-decoration-line-through">${unit.id}</strong>
-                    <span class="text-danger small tracking-wide fw-bold text-uppercase"><i class="fa-solid fa-screwdriver-wrench me-1"></i>Under Maintenance</span>
+                    <span class="text-danger small tracking-wide fw-bold text-uppercase"><i class="fa-solid fa-screwdriver-wrench me-1"></i>Offline Lockdown</span>
                 </div>
             `;
             trackingStateMarkerBadge = `<span class="badge bg-danger text-white py-1.5 px-2">UNAVAILABLE</span>`;
