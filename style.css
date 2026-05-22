@@ -1,6 +1,4 @@
-/* ==========================================================================
-   PRODUCTION FRAMEWORK DESIGN SCHEMES & RESPONSIVE SHIFTS
-   ========================================================================== */
+/*PRODUCTION FRAMEWORK DESIGN SCHEMES & RESPONSIVE SHIFTS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
 
 :root {
@@ -102,8 +100,7 @@ body {
     flex-shrink: 0;
 }
 
-/* ==========================================================================
-   ADVANCED HOVER FEEDBACK KINETICS ENGINE */
+/* ADVANCED HOVER FEEDBACK KINETICS ENGINE */
 .custom-nav-link {
     color: #94a3b8 !important;
     position: relative;
