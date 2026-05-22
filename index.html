@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Fresh | Premium Professional Laundry Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-cloud-soft">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-cloud-nav sticky-top shadow-sm" id="mainAppNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-black text-white" href="#" onclick="switchSPAPage('home')">
+                <i class="fa-solid fa-soap me-2 text-info animate-float"></i>BUBBLE FRESH
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto fw-medium text-uppercase tracking-wider small">
+                    <li class="nav-item"><a class="nav-link custom-nav-link" id="nav-home" href="#" onclick="switchSPAPage('home')">Home</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" id="nav-about" href="#" onclick="switchSPAPage('about')">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" id="nav-services" href="#" onclick="switchSPAPage('services')">Services</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" id="nav-pricing" href="#" onclick="switchSPAPage('pricing')">Order & Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" id="nav-contact" href="#" onclick="switchSPAPage('contact')">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link text-warning d-none" id="nav-admin" href="#" onclick="switchSPAPage('admin')"><i class="fa-solid fa-user-gear me-1"></i>Admin Panel</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow-1">
+
+        <section id="page-home" class="spa-section py-5 animate-pop">
+            <div class="container">
+                <div class="row align-items-center justify-content-between g-5 mb-5 header-hero-split">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <div class="brand-tagline-badge mb-3">
+                            <i class="fa-solid fa-sparkles text-info me-2"></i>Welcome to Bubble Fresh
+                        </div>
+                        <h1 class="display-4 fw-black text-cloud-dark mb-3">Your Complete Laundry Hub</h1>
+                        <p class="text-muted lead mb-4">Monitor machine allocations live, calculate customized weight rates transparently, and book your fabric care parameters instantly via our unified public digital hub.</p>
+                        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                            <button class="btn btn-info btn-lg text-white fw-bold px-4 py-3 btn-hover-effect" onclick="switchSPAPage('pricing')">
+                                <i class="fa-solid fa-basket-shopping me-2"></i>Place Order & Check Rates
+                            </button>
+                            <button class="btn btn-outline-dark btn-lg fw-bold px-4 py-3 btn-hover-effect" onclick="switchSPAPage('services')">
+                                View Service Profiles
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 hero-graphic-frame text-center">
+                        <div class="p-5 rounded-4-cloud text-white position-relative shadow overflow-hidden graphic-placeholder">
+                            <div class="decorative-blob"></div>
+                            <div class="position-relative z-index-2">
+                                <i class="fa-solid fa-shirt display-1 text-info mb-3 animate-float"></i>
+                                <h3 class="fw-bold font-sans">Professional Laundry Management</h3>
+                                <p class="small text-white-50">Fabric Care, Optimization, and Delivery Trackers Combined.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 text-center mt-2">
+                    <div class="col-md-4">
+                        <div class="p-4 bg-white rounded-4-cloud border shadow-sm card-hover-effect">
+                            <i class="fa-solid fa-circle-check text-success display-6 mb-2"></i>
+                            <h5 class="fw-bold mb-1">8 High-Speed Units</h5>
+                            <p class="small text-muted mb-0">Micro-calibrated commercial equipment.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 bg-white rounded-4-cloud border shadow-sm card-hover-effect">
+                            <i class="fa-solid fa-bolt text-warning display-6 mb-2"></i>
+                            <h5 class="fw-bold mb-1">Instant Estimates</h5>
+                            <p class="small text-muted mb-0">Exact computational pricing rules.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 bg-white rounded-4-cloud border shadow-sm card-hover-effect">
+                            <i class="fa-solid fa-wallet text-info display-6 mb-2"></i>
+                            <h5 class="fw-bold mb-1">Multi-Option Checkout</h5>
+                            <p class="small text-muted mb-0">Cash, Card, and Online digital options.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-about" class="spa-section py-5 d-none animate-pop">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <div class="brand-tagline-badge mb-2">About Us</div>
+                    <h2 class="fw-black text-cloud-dark mb-2">Clean Laundry, Every Time</h2>
+                    <p class="text-muted max-w-xl mx-auto lead">
+                        Check machine availability, get instant price estimates, and book your laundry service in just a few clicks.
+                    </p>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden bg-white rounded-4-cloud card-hover-effect">
+                            <div class="p-4 border-bottom bg-light d-flex align-items-center gap-3">
+                                <div class="p-2 bg-success-subtle text-success rounded-3 fs-4">
+                                    <i class="fa-solid fa-store"></i>
+                                </div>
+                                <h5 class="fw-black text-cloud-dark mb-0">Storefront Pick-up Logistics</h5>
+                            </div>
+                            <div class="p-4">
+                                <p class="text-muted small">Drop off your items at our physical storefront. Our digital tracker logs your weight immediately, maps it to an available machine, and fires a real-time update ready for your return collection.</p>
+                                <div class="p-3 bg-cloud-soft border rounded-3 small text-muted">
+                                    <div class="mb-2"><i class="fa-solid fa-clock text-success me-2"></i><strong>Standard Turnover:</strong> 2 to 4 Hours</div>
+                                    <div><i class="fa-solid fa-circle-nodes text-success me-2"></i><strong>Tracking Manifest:</strong> Monitored on dashboard grid views</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden bg-white rounded-4-cloud card-hover-effect">
+                            <div class="p-4 border-bottom bg-light d-flex align-items-center gap-3">
+                                <div class="p-2 bg-info-subtle text-info rounded-3 fs-4">
+                                    <i class="fa-solid fa-truck-ramp-box"></i>
+                                </div>
+                                <h5 class="fw-black text-cloud-dark mb-0">Doorstep Courier Delivery</h5>
+                            </div>
+                            <div class="p-4">
+                                <p class="text-muted small">Can't make it to the hub? We manage end-to-end transport fulfillment structures. Items are carefully packed into pristine storage containers following sanitization sequences before dispatching.</p>
+                                <div class="p-3 bg-cloud-soft border rounded-3 small text-muted">
+                                    <div class="mb-2"><i class="fa-solid fa-location-dot text-info me-2"></i><strong>Coverage Radius:</strong> Quezon City & surrounding Metro Manila maps</div>
+                                    <div><i class="fa-solid fa-shield-halved text-info me-2"></i><strong>Safety Matrix:</strong> Sealed protective garment wraps guaranteed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-services" class="spa-section py-5 d-none animate-pop">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-black text-cloud-dark mb-2">Service Profiles & Pricing Guidelines</h2>
+                    <p class="text-muted max-w-md mx-auto">Explore packages crafted for specific fabric types. Rates automatically scale proportionally by load size.</p>
+                </div>
+                <div class="row g-4" id="servicesGridContainer"></div>
+            </div>
+        </section>
+
+        <section id="page-pricing" class="spa-section py-5 d-none animate-pop">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="card border-0 shadow-sm rounded-4-cloud mb-4 overflow-hidden">
+                            <div class="card-header bg-dark text-white p-3 fw-bold d-flex justify-content-between align-items-center">
+                                <span><i class="fa-solid fa-hard-drive text-info me-2"></i>Machines Status Fleet</span>
+                                <span class="badge bg-info text-white small font-monospace tracking-wider">8 Total Units</span>
+                            </div>
+                            <div class="p-3 bg-light" id="machineryStatusGrid" style="max-height: 520px; overflow-y: auto;"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-7 col-lg-6">
+                        <div class="card border-0 shadow-sm rounded-4-cloud overflow-hidden">
+                            <div class="card-header bg-info text-white p-3 fw-bold">
+                                <i class="fa-solid fa-cart-shopping me-2"></i>Configure Order Parameters
+                            </div>
+                            <div class="card-body p-4 bg-white">
+                                <form id="bookingCalculatorForm" novalidate>
+                                    
+                                    <div class="mb-3 p-2 bg-light border rounded d-flex align-items-center justify-content-between d-none" id="machineLockIndicatorBox">
+                                        <span class="small fw-bold text-secondary"><i class="fa-solid fa-circle-nodes text-success me-2"></i>Target Allocated Hardware:</span>
+                                        <span class="badge bg-dark font-monospace text-info px-3" id="lblLockedMachine">NONE</span>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label small fw-bold text-muted text-uppercase tracking-wider">Client Registry Information</label>
+                                        <div class="row g-2">
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control input-custom" id="custNameInput" placeholder="Client Name(e.g. John Doe)">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control input-custom" id="custPhoneInput" placeholder="Contact Number(e.g. +63 912 345 6789)">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label small fw-bold text-muted text-uppercase tracking-wider">Service Treatment Profile</label>
+                                        <select class="form-select select-cloud font-semibold text-secondary" id="custServiceType"></select>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label small fw-bold text-muted text-uppercase tracking-wider">Clothes Weight Load</label>
+                                        <div class="input-group border rounded">
+                                            <input type="number" class="form-control border-0 shadow-none font-monospace input-custom" id="custWeightInput" min="1" max="50" value="3">
+                                            <span class="input-group-text border-0 bg-light fw-bold text-muted">KG</span>
+                                        </div>
+                                        <div class="form-text text-info small"><i class="fa-solid fa-circle-info me-1"></i>Pricing is micro-calibrated relative to your weight parameters.</div>
+                                    </div>
+
+                                    <div class="mb-3 p-3 border rounded bg-light">
+                                        <div class="form-check form-switch checkbox-cloud d-flex align-items-center">
+                                            <input class="form-check-input me-3" type="checkbox" id="chkFlatIronAddon" value="60">
+                                            <label class="form-check-label fw-bold text-cloud-dark" for="chkFlatIronAddon">Include Flat Ironing Add-on (+₱60.00)</label>
+                                        </div>
+                                        <div id="ironingDetailsFormBlock" class="d-none mt-3 animate-slide-down">
+                                            <label class="form-label small fw-bold text-muted text-uppercase tracking-wider">Ironing Specifications</label>
+                                            <textarea class="form-control input-custom" id="txtIroningDetails" rows="2" placeholder="Specify which items require ironing..."></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label small fw-bold text-muted text-uppercase tracking-wider">Payment Route Framework</label>
+                                        <div class="row g-2">
+                                            <div class="col-4">
+                                                <input type="radio" class="btn-check" name="radPaymentMethod" id="payCash" value="Cash" checked>
+                                                <label class="btn btn-outline-cloud w-100 py-2.5 border fw-bold btn-hover-effect" for="payCash">
+                                                    <i class="fa-solid fa-money-bill-wave me-2 text-success"></i>Cash
+                                                </label>
+                                            </div>
+                                            <div class="col-4">
+                                                <input type="radio" class="btn-check" name="radPaymentMethod" id="payCard" value="Card">
+                                                <label class="btn btn-outline-cloud w-100 py-2.5 border fw-bold btn-hover-effect" for="payCard">
+                                                    <i class="fa-solid fa-credit-card me-2 text-primary"></i>Card
+                                                </label>
+                                            </div>
+                                            <div class="col-4">
+                                                <input type="radio" class="btn-check" name="radPaymentMethod" id="payOnline" value="Online Payment">
+                                                <label class="btn btn-outline-cloud w-100 py-2.5 border fw-bold btn-hover-effect" for="payOnline">
+                                                    <i class="fa-solid fa-globe me-2 text-purple"></i>Online
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="onlinePaymentSubBlock" class="mb-3 d-none animate-slide-down">
+                                        <label class="form-label small fw-bold text-muted text-uppercase tracking-wider">Select Online E-Wallet Provider</label>
+                                        <select class="form-select select-cloud font-semibold text-secondary" id="custOnlineProvider">
+                                            <option value="GCash">GCash Checkout Gateway</option>
+                                            <option value="Maya">Maya Digital Gateway</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="p-3 bg-cloud-soft border rounded mb-4">
+                                        <div class="d-flex justify-content-between text-muted small mb-1">
+                                            <span>Dynamic Service Weight Cost:</span><span id="lblBaseOut" class="font-monospace fw-bold">0.00</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between text-muted small mb-2">
+                                            <span>Flat Ironing Precision Add-on:</span><span id="lblIronOut" class="font-monospace fw-bold">₱0.00</span>
+                                        </div>
+                                        <hr class="my-2" style="border-top: 1px dashed #cbd5e1;">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold text-cloud-dark">All-In Package Price:</span>
+                                            <h4 class="fw-black text-info font-monospace mb-0" id="lblGrandTotalOut">₱0.00</h4>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-info btn-lg w-100 text-white fw-bold py-3 shadow btn-hover-effect" id="btnCustomerBook">
+                                        <i class="fa-solid fa-paper-plane me-2"></i>GENERATE TRANSACTION INVOICE
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-contact" class="spa-section py-5 d-none animate-pop">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <div class="brand-tagline-badge mb-2">Get In Touch</div>
+                    <h2 class="fw-black text-cloud-dark mb-2">We Are Ready To Help</h2>
+                    <p class="text-muted max-w-md mx-auto">Have questions about delicate garment fibers, bulk items, or live delivery scheduling routes?</p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card border-0 bg-cloud-nav text-white p-4 rounded-4-cloud shadow mb-4">
+                            <h4 class="fw-bold text-info mb-4">Connect Instantly</h4>
+                            
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="fs-4 text-info me-3" style="width:30px;"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <span class="d-block small text-white-50">Operational Hotline</span>
+                                    <strong class="font-monospace text-white">+63 912 375 6779</strong>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="fs-4 text-info me-3" style="width:30px;"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="d-block small text-white-50">Support Email Mailbox</span>
+                                    <strong class="text-white">support@bubblefresh.com</strong>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center">
+                                <div class="fs-4 text-info me-3" style="width:30px;"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="d-block small text-white-50">Physical Hub Address</span>
+                                    <strong class="text-white small"> North Fairview, Quezon City, Metro Manila</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 bg-white p-4 rounded-4-cloud shadow-sm">
+                            <h5 class="fw-bold text-cloud-dark mb-3"><i class="fa-solid fa-clock text-info me-2"></i>Business Hours</h5>
+                            <ul class="list-unstyled mb-0 small text-muted">
+                                <li class="d-flex justify-content-between py-1.5 border-bottom"><span>Monday - Friday</span> <strong class="text-dark">7:00 AM - 9:00 PM</strong></li>
+                                <li class="d-flex justify-content-between py-1.5 border-bottom"><span>Saturday</span> <strong class="text-dark">8:00 AM - 8:00 PM</strong></li>
+                                <li class="d-flex justify-content-between py-1.5"><span>Sunday</span> <span class="badge bg-danger-subtle text-danger fw-bold">CLOSED</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm rounded-4-cloud p-4 bg-white h-100">
+                            <h4 class="fw-black text-cloud-dark mb-2">Drop a Message</h4>
+                            <p class="text-muted small mb-4">Send an instant query directly to our support workspace monitors.</p>
+                            
+                            <form onsubmit="event.preventDefault(); alert('Thank you! Your feedback token has been submitted safely to our system desk.'); this.reset();">
+                                <div class="mb-3">
+                                    <label class="form-label small fw-bold text-muted">Your Name</label>
+                                    <input type="text" class="form-control input-custom" placeholder="John Doe" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label small fw-bold text-muted">Email Address</label>
+                                    <input type="email" class="form-control input-custom" placeholder="john@example.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label small fw-bold text-muted">Message Directive</label>
+                                    <textarea class="form-control input-custom" rows="4" placeholder="How can our cleaning cycles help you today?" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-info w-100 text-white fw-bold py-2.5 rounded-3 btn-hover-effect">
+                                    <i class="fa-solid fa-paper-plane me-2"></i>DISPATCH MESSAGE
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-admin" class="spa-section py-5 d-none animate-pop">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4 border-bottom pb-3">
+                    <div>
+                        <span class="badge bg-danger-subtle text-danger font-monospace text-uppercase fw-bold mb-1">Administrative Node Only</span>
+                        <h2 class="fw-black text-cloud-dark mb-0"><i class="fa-solid fa-chart-line text-info me-2"></i>Live System Backoffice Management</h2>
+                    </div>
+                    <button class="btn btn-outline-danger fw-bold btn-sm" onclick="exitAdminSession()">Log Out Admin</button>
+                </div>
+
+                <div class="row g-3 mb-5 text-center">
+                    <div class="col-md-4">
+                        <div class="p-4 bg-white rounded-4-cloud border shadow-sm">
+                            <i class="fa-solid fa-sack-dollar text-success display-6 mb-2"></i>
+                            <h6 class="text-muted small text-uppercase tracking-wider fw-bold">Aggregate Gross Revenue</h6>
+                            <h2 class="fw-black text-dark font-monospace mb-0" id="lblAdminGrossRevenue">₱0.00</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 bg-white rounded-4-cloud border shadow-sm">
+                            <i class="fa-solid fa-basket-shopping text-info display-6 mb-2"></i>
+                            <h6 class="text-muted small text-uppercase tracking-wider fw-bold">Washes Transacted</h6>
+                            <h2 class="fw-black text-dark font-monospace mb-0" id="lblAdminTotalTransactions">0 Orders</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 bg-white rounded-4-cloud border shadow-sm">
+                            <i class="fa-solid fa-screwdriver-wrench text-warning display-6 mb-2"></i>
+                            <h6 class="text-muted small text-uppercase tracking-wider fw-bold">Maintenance Lockdowns</h6>
+                            <h2 class="fw-black text-dark font-monospace mb-0" id="lblAdminMaintenanceCount">0 Units</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-5">
+                        <div class="card border-0 shadow-sm rounded-4-cloud mb-4 overflow-hidden">
+                            <div class="card-header bg-dark text-white p-3 fw-bold">
+                                <i class="fa-solid fa-tags text-info me-2"></i>Configure Service Rates Matrix
+                            </div>
+                            <div class="card-body p-3 bg-white" id="adminServiceRatesControlsDeck"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="card border-0 shadow-sm rounded-4-cloud mb-4 overflow-hidden">
+                            <div class="card-header bg-cloud-nav text-white p-3 fw-bold">
+                                <i class="fa-solid fa-gears text-info me-2"></i>Fleet Telemetry Control Center
+                            </div>
+                            <div class="card-body p-3 bg-white" id="adminFleetControlsDeck"></div>
+                        </div>
+
+                        <div class="card border-0 shadow-sm rounded-4-cloud overflow-hidden">
+                            <div class="card-header bg-secondary text-white p-3 fw-bold">
+                                <i class="fa-solid fa-receipt me-2"></i>Transactional History Audits
+                            </div>
+                            <div class="p-0 table-responsive" style="max-height: 300px;">
+                                <table class="table table-striped table-hover align-middle mb-0 small">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>Client</th>
+                                            <th>Machine</th>
+                                            <th>Payment</th>
+                                            <th class="text-end">Revenue</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="adminTransactionHistoryTableBody">
+                                        <tr><td colspan="4" class="text-center text-muted py-4">No completed transaction payloads indexed in database yet.</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="modal fade" id="posInvoiceModal" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg rounded-4-cloud overflow-hidden bg-white">
+                
+                <div id="invoiceCoreFormView">
+                    <div class="modal-body p-4 text-center">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-info text-white rounded-circle mb-2 shadow animate-float" style="width: 70px; height: 70px;">
+                            <i class="fa-solid fa-soap display-6"></i>
+                        </div>
+                        <h4 class="fw-black tracking-wide text-cloud-dark mb-1">BubbleFresh</h4>
+                        <p class="small text-muted mb-4 uppercase tracking-wider font-monospace text-info">Professional Laundry Service</p>
+                        
+                        <h5 class="fw-black text-dark text-uppercase tracking-wide text-start mb-2 small"><i class="fa-solid fa-paste me-2 text-secondary"></i>Payment Summary</h5>
+                        
+                        <div class="card border border-light-subtle rounded-3 p-3 bg-light text-start mb-4 shadow-inner">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="text-muted small font-sans">Client Representative:</span>
+                                <span class="fw-bold text-dark small" id="invClientName">--</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="text-muted small font-sans">Contact Channel Signature:</span>
+                                <span class="fw-medium font-monospace text-dark small" id="invClientPhone">--</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="text-muted small font-sans">Allocated Hardware Node:</span>
+                                <span class="badge bg-dark font-monospace text-info" id="invMachineUnit">--</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="text-muted small font-sans">Selected Payment Route:</span>
+                                <span class="badge bg-info-subtle text-info fw-bold" id="invPaymentMethod">--</span>
+                            </div>
+                            <div id="invIroningRow" class="d-none mt-2 p-2 bg-white rounded border">
+                                <span class="text-purple small fw-bold d-block"><i class="fa-solid fa-wand-magic-sparkles me-1"></i>Ironing Matrix Directives:</span>
+                                <p class="text-muted mb-0 small font-italic" id="invIroningText"></p>
+                            </div>
+                            <hr class="my-2" style="border-top: 1px dashed #cbd5e1;">
+                            <div class="d-flex justify-content-between align-items-center pt-1">
+                                <span class="fw-black text-cloud-dark">Total Amount Due:</span>
+                                <h4 class="fw-black text-info font-monospace mb-0" id="invoiceAmountLabel">₱0.00</h4>
+                            </div>
+                        </div>
+
+                        <div id="digitalPaymentDisplayBlock" class="d-none border rounded p-3 text-center bg-cloud-soft mb-3 animate-slide-down">
+                            <span class="small fw-black text-uppercase tracking-wider text-muted d-block mb-1" id="lblTerminalPaymentType">Pay via GCash</span>
+                            <h4 class="fw-black text-dark mb-3" id="lblInvoiceScanAmount">₱0.00</h4>
+                            <div class="p-2 bg-white d-inline-block border rounded mb-2 shadow-sm card-hover-effect">
+                                <i class="fa-solid fa-qrcode text-dark" style="font-size: 6rem;"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer bg-light border-top p-3 d-flex gap-2">
+                        <button type="button" class="btn btn-outline-secondary font-monospace fw-bold px-4 btn-hover-effect" onclick="dismissInvoiceReceipt()">CANCEL</button>
+                        <button type="button" class="btn btn-info flex-grow-1 text-white fw-bold btn-hover-effect" onclick="triggerExecutionCommit()">CONFIRM PAYMENT</button>
+                    </div>
+                </div>
+
+                <div id="invoiceSuccessScreenView" class="d-none animate-pop">
+                    <div class="modal-body p-5 text-center">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-success text-white rounded-circle mb-4 shadow animate-float" style="width: 80px; height: 80px;">
+                            <i class="fa-solid fa-circle-check display-4"></i>
+                        </div>
+                        <h3 class="fw-black text-cloud-dark mb-1">Payment Successful!</h3>
+                        <p class="text-muted mb-4 font-sans" id="lblSuccessTransactionContext">Payment route method confirmed smoothly.</p>
+                        <h2 class="fw-black text-success font-monospace" id="lblSuccessAmountValue">₱0.00</h2>
+                    </div>
+                    <div class="modal-footer bg-light border-0 p-3">
+                        <button type="button" class="btn btn-dark w-100 fw-bold py-2.5 btn-hover-effect" onclick="completeAndResetWorkflow()">INITIALIZE SYSTEM UNITS</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-cloud-nav text-white-50 py-4 border-top border-light border-opacity-10" id="mainAppFooter">
+        <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+            <p class="mb-0 text-white fw-medium">&copy; 2026 Bubble Fresh Laundromat Hub. Automated Fabric Systems.</p>
+            <button class="btn btn-sm btn-dark text-info fw-bold border-secondary border-opacity-50" onclick="requestAdminConsoleAuthentication()">
+                <i class="fa-solid fa-user-lock me-1"></i>Admin Access Hub
+            </button>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
