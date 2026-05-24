@@ -21,7 +21,7 @@ let hardwareFleetTelemetry = [
 let transactedRevenueInvoicesHistory = [
     { client: "Gabbi Elle", machine: "Unit 101", payment: "GCash Gateway", totalAmount: 180.00 },
     { client: "Maria Clara", machine: "Unit 103", payment: "Cash Operation", totalAmount: 120.00 },
-    { client: "Pedro Penduko", machine: "Unit 106", payment: "Card Terminal", totalAmount: 200.00 }
+    { client: "Lian Pauline", machine: "Unit 106", payment: "Card Terminal", totalAmount: 200.00 }
 ];
 
 let activeSectionPage = "home";
